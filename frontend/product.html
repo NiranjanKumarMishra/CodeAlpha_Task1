@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Product Details</title>
+</head>
+<body>
+  <h1>Product Info</h1>
+  <div id="product-details"></div>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    fetch(`http://localhost:5000/api/product/${id}`)
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("product-details").innerHTML = `
+          <h2>${data.name}</h2>
+          <img src="${data.image}" />
+          <p>Price: ₹${data.price}</p>
+          <button onclick="addToCart(${data.id})">Add to Cart</button>
+        `;
+      });
+
+    function addToCart(id) {
+      alert(`Added product ${id} to cart`);
+    }
+  </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Product Details</title>
+  <meta charset="UTF-8" />
+</head>
+<body>
+  <h1>Product Info</h1>
+  <div id="product-details"></div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
+
+    let selectedProduct = null;
+
+    fetch(`http://localhost:5000/api/product/${id}`)
+      .then(res => res.json())
+      .then(data => {
+        selectedProduct = data;
+
+        document.getElementById("product-details").innerHTML = `
+          <h2>${data.name}</h2>
+          <img src="${data.image}" width="200" />
+          <p>Price: ₹${data.price}</p>
+          <button onclick="addToCart()">Add to Cart</button>
+        `;
+      });
+
+    function addToCart() {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      cart.push(selectedProduct);
+      localStorage.setItem("cart", JSON.stringify(cart));
+      alert("Product added to cart!");
+
+      // Redirect to cart
+      window.location.href = "cart.html";
+    }
+  </script>
+</body>
+</html>

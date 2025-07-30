@@ -1,0 +1,100 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "T-Shirt",
+      "price": 299,
+      "image": "http://localhost:5000/images/tshirt.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Shoes",
+      "price": 999,
+      "image": "http://localhost:5000/images/shoes.jpeg"
+    },
+
+    {
+      "id": 3,
+      "name": "Lipsticks",
+      "price": 999,
+      "image": "http://localhost:5000/images/lipstick.jpeg"
+    },
+
+    {
+      "id": 4,
+      "name": "perfume",
+      "price": 999,
+      "image": "http://localhost:5000/images/perfume.jpeg"
+    }
+
+    ,
+    {
+      "id": 5,
+      "name": "cosmatics",
+      "price": 999,
+      "image": "http://localhost:5000/images/cosmatics.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "ties",
+      "price": 999,
+      "image": "http://localhost:5000/images/ties.jpeg"
+    }
+
+    ,
+    {
+      "id": 7,
+      "name": "sunglasses",
+      "price": 999,
+      "image": "http://localhost:5000/images/sunglasses.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "watches",
+      "price": 999,
+      "image": "http://localhost:5000/images/watches.jpeg"
+    }
+
+    ,
+    {
+      "id": 9,
+      "name": "bags",
+      "price": 999,
+      "image": "http://localhost:5000/images/bags.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "caps",
+      "price": 999,
+      "image": "http://localhost:5000/images/caps.jpeg"
+    }
+
+    ,
+    {
+      "id": 11,
+      "name": "Formals",
+      "price": 999,
+      "image": "http://localhost:5000/images/Formals.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "jackets",
+      "price": 999,
+      "image": "http://localhost:5000/images/jackets.jpeg"
+    }
+
+    ,
+    {
+      "id": 13,
+      "name": "blazers",
+      "price": 999,
+      "image": "http://localhost:5000/images/blazers.jpeg"
+    },
+    {
+      "id": 14,
+      "name": "sarees",
+      "price": 999,
+      "image": "http://localhost:5000/images/sarees.jpeg"
+    }
+  ]
+}
